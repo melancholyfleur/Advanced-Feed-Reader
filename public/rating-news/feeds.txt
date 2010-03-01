@@ -1,0 +1,2 @@
+http://graphics8.nytimes.com/services/xml/rss/nyt/HomePage.xml
+http://www.iht.com/rss/frontpage.xml
