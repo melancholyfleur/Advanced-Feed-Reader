@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <!--<title>Feeds: <%= controller.action_name %></title>-->
+	<title>Advanced Aggregation</title>
+  <%= stylesheet_link_tag 'home' %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<h1>Welcome, Reader!</h1>
+
+<div class="left">
+Feeds:<br />
+<%= link_to 'New feed', new_feed_path %><br />
+Sifters:<br />
+<%= link_to 'New sifter', new_sifter_path %>
+<p class="clear" />
+</div>
+
+<div class="center">
+<%= yield %>
+<p class="clear" />
+</div>
+
+<div class="right">
+Tags<br />
+<!-- tag cloud here -->
+<p class="clear" />
+</div>
+
+</body>
+</html>

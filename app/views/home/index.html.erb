@@ -1,0 +1,10 @@
+
+<% @feeds.each do |feed| %>
+<p>
+   <a href="<%=h feed.url %>"><%=h feed.name %></a><br />
+		CONTENT CONTENT CONTENT<br />
+		Tags: <%=h feed.tag_list %><br />
+    <%= link_to 'Show', feed %> <%= link_to 'Edit', edit_feed_path(feed) %> <%= link_to 'x', feed, :confirm => 'Are you sure?', :method => :delete %>
+</p>
+<% end %>
+
