@@ -42,6 +42,7 @@ class FeedsController < ApplicationController
   def create
     @feed = Feed.new(params[:feed])
 
+#i'd like to, here, have it write the feed url to a file
     respond_to do |format|
       if @feed.save
         flash[:notice] = 'Feed was successfully created.'

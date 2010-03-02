@@ -14,3 +14,6 @@ TO DO:
 -can i make the feed in the center of the home page dynamic?
 -user sign-up stuff
 	-security
+
+If you wanna see where I'm at with this, you'd have to download the source. Then, cd into the parent directory. Then, run "./script/server" and open "http://localhost:3000/" in your browser.
+
